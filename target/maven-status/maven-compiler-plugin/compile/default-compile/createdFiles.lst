@@ -1,4 +1,7 @@
+bean/Person.class
+validator/PersonValidator.class
 boat/controller/MultiController.class
 boat/controller/ParameterController.class
 boat/controller/RESTController.class
 boat/controller/HelloController.class
+boat/controller/PersonController.class
