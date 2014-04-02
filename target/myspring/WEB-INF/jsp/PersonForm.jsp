@@ -13,33 +13,32 @@ td span{color:red;}
 
 </head>
 <body>
-
 <form:form commandName="person" action="showPerson.htm" method="post">
     <table>
         <tr>
-            <th colspan="3">Add Person</th>
+            <th>Add Person</th>
         </tr>
         <tr>
-            <td width="49%" align="right">Name</td>
-            <td width="2%">&nbsp;</td>
-            <td width="49%"><form:input path="name" /><form:errors path="name"/></td>
+            <td>Name</td>
+            <td>&nbsp;</td>
+            <td><form:input path="name" /><form:errors path="name"/></td>
         </tr>
         <tr>
-            <td width="49%" align="right">Age</td>
-            <td width="2%">&nbsp;</td>
-            <td width="49%"><form:input path="age" /><form:errors path="age"/></td>
+            <td>Age</td>
+            <td>&nbsp;</td>
+            <td><form:input type="number" path="age" /><form:errors path="age"/></td>
         </tr>
         <tr>
-            <td width="49%" align="right">Sex</td>
-            <td width="2%">&nbsp;</td>
-            <td width="49%">Male: <form:radiobutton path="sex" value="male" />
+            <td>Sex</td>
+            <td>&nbsp;</td>
+            <td>Male: <form:radiobutton path="sex" value="male" />
 
             Female: <form:radiobutton path="sex" value="female" /><form:errors path="sex"/></td>
         </tr>
         <tr>
-            <td width="49%" align="right">Location</td>
-            <td width="2%">&nbsp;</td>
-            <td width="49%">
+            <td>Location</td>
+            <td>&nbsp;</td>
+            <td>
                 <form:select path="location">
                     <form:option value="Bangalore" />
                     <form:option value="Delhi" />
@@ -48,9 +47,9 @@ td span{color:red;}
                 </form:select><form:errors path="location"/></td>
         </tr>
         <tr>
-            <td width="49%" align="right">&nbsp;</td>
-            <td width="2%">&nbsp;</td>
-            <td width="49%"><input type="submit" value="Save Changes" /></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Save Changes" /></td>
         </tr>
     </table>
 

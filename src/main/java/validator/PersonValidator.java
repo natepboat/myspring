@@ -18,10 +18,11 @@ public class PersonValidator implements Validator {
 
         Person p = (Person) target;
 
-        ValidationUtils.rejectIfEmpty(errors, "name", "nameEmpty", "enter name");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "nameEmpty", "enter name");
         if (p.getAge() <= 0 || p.getAge() > 110) {
             errors.rejectValue("age", "wrongAge", "enter valid age");
         }
+
         ValidationUtils.rejectIfEmpty(errors, "sex", "sexEmpty", "select sex");
         ValidationUtils.rejectIfEmpty(errors, "location", "locationEmpty",
                 "select location");
