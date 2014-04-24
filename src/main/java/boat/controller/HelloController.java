@@ -24,6 +24,6 @@ public class HelloController {
         model.addAttribute("message2", "click2!!.");
         return "hello";
 
-    }
+    } 
 
 }
